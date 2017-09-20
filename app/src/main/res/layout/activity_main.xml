@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:scrollbars="vertical"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context="com.somthing.amarguriya.programming.MainActivity"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:src="@drawable/profiledp"
+       android:layout_gravity="center"
+       android:layout_marginTop="140dp"/>
+    <TextView
+        android:id="@+id/ftext1"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="25dp"
+        android:text="Java"/>
+
+    <TextView
+        android:id="@+id/ftext2"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Programming King"
+        android:textSize="20dp"/>
+
+    <Button
+        android:textColor="#ffffff"
+        android:background="@drawable/start_shape"
+        android:onClick="letsStart"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="start"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textAllCaps="false"
+        />
+
+    <com.google.android.gms.ads.AdView
+        android:layout_gravity="center"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

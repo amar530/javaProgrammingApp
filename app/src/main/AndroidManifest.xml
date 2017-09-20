@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.somthing.amarguriya.programming">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-sdk android:minSdkVersion="14"
+        android:targetSdkVersion="24" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mainpc"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/childTheame">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Details"
+            android:screenOrientation="portrait">
+            <action android:name="com.somthing.amarguriya.programming.Details" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity
+            android:name=".Aboutus"
+            android:parentActivityName=".Details"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Details" />
+        </activity>
+        <activity
+            android:name=".Contactus"
+            android:parentActivityName=".Details"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Details" />
+
+        <activity
+            android:name=".Learn"
+            android:parentActivityName=".Details">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Details" />
+        </activity>
+        <activity
+            android:name=".BasicProgram"
+            android:parentActivityName=".Learn" />
+        <!-- <meta-data -->
+        <!-- android:name="android.support.PARENT_ACTIVITY" -->
+        <!-- android:value=".Learn" /> -->
+        <activity
+            android:name=".NumberProgram"
+            android:parentActivityName=".Learn" />
+        <activity
+            android:name=".PatternProgram"
+            android:parentActivityName=".Learn" />
+        <activity
+            android:name=".OneDimensionalProgram"
+            android:parentActivityName=".Learn" />
+        <activity
+            android:name=".TwoDimensionalProgram"
+            android:parentActivityName=".Learn" />
+        <activity
+            android:name=".StringProgram"
+            android:parentActivityName=".Learn" />
+        <activity
+            android:name=".RecursionProgram"
+            android:parentActivityName=".Learn" />
+        <activity
+            android:name=".DataStructureProgram"
+            android:parentActivityName=".Learn" />
+        <activity
+            android:name=".OcjpExplanation"
+            android:parentActivityName=".Learn" />
+        <activity android:name=".AdditionOfTwoNumber" />
+        <activity android:name=".SubtractionOfTwoNumber" />
+        <activity android:name=".MultiplicationOfTwoNumber" />
+        <activity android:name=".CircleArea" />
+        <activity android:name=".RectangleArea" />
+        <activity android:name=".SimpleInterest" />
+        <activity
+            android:name=".NumberSystemContainer"
+            android:parentActivityName=".BasicProgram">
+            <intent-filter>
+                <action android:name="com.somthing.amarguriya.programming.NumberSystemContainer" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AboutApp"
+            android:parentActivityName=".Aboutus"/>
+        <activity android:name=".AboutMe"
+            android:parentActivityName=".Aboutus"></activity>
+    </application>
+
+</manifest>

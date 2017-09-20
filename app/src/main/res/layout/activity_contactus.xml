@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="#e040fb"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.somthing.amarguriya.programming.Contactus">
+    <include
+        android:id="@+id/contactToolbar"
+        layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/bgprofile"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/profiledp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-80dp"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="RAGHU GB"/>
+   <LinearLayout
+       android:layout_marginTop="10dp"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:layout_width="20dp"
+           android:layout_height="20dp"
+           android:src="@drawable/email"/>
+       <TextView
+           android:textSize="18dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=" : raghugbr@gmail.com"/>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/phone"/>
+        <TextView
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : 9740642202"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/office"/>
+        <TextView
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : JSPIDER BTM BANGALORE"/>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_gravity="center"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer1">
+    </com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>

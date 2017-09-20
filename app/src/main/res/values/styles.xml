@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="childTheame" parent="superTheame">
+
+    </style>
+
+    <style name="superTheame" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+
+    </style>
+
+</resources>

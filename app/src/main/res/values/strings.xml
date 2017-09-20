@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Lets Program</string>
+    <string name="info">Name: Raghu</string>
+
+    <string-array name="contents">
+        <item>Basic Program</item>
+        <item>Number Program</item>
+        <item>Pattern Program</item>
+        <item>One Dimensional Array Program</item>
+        <item>Two Dimensional Array Program</item>
+        <item>String Program</item>
+        <item>Recursion Program</item>
+        <item>Data Structure Program</item>
+        <item>OCJP Explanation</item>
+    </string-array>
+    <string name="banner_home_footer">ca-app-pub-4756045776224392/5399130261</string>
+    <string name="banner_home_footer1">ca-app-pub-4756045776224392/5259529467</string>
+    <string name="banner_home_footer3">ca-app-pub-4756045776224392/9689729062</string>
+</resources>
+

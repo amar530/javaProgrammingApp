@@ -1,0 +1,62 @@
+import java.util.Scanner;
+public class AddMatrix {
+	static int [] [] readMat ()
+	{
+		Scanner sc= new Scanner (System.in);
+		System.out.println ("Enter the row");
+		int r=sc.nextInt ();
+		System.out.println("enter the colom");
+		int c=sc.nextInt ();
+		int ar [][] =new int[r][c];
+		System.out.println ("enter "+r*c+" Elements");
+		for (int i=0; i<ar.length; i++)
+		{
+			for (int j=0; j<ar[i].length; j++)
+			{
+				ar[i] [j] =sc.nextInt ();
+			}
+		}
+		return ar;
+	}
+	static void display (int a [] [])
+	{
+		for (int i=0; i<a.length; i++)
+		{
+			for (int j=0; j<a[i].length; j++)
+			{
+				System.out.print (a[i][j]+"  ");
+			}
+			System.out.println ();
+		}
+	}
+	static int[][] addMatrix(int x[][],int y[][]){
+		if(x.length!=y.length||x[0].length!=y[0].length){
+			System.out.println("not possible to add");
+			return null;
+		}
+		for(int i=0;i<x.length;i++){
+
+
+		for(int j=0;j<x[i].length;j++){
+			x[i][j]=x[i][j]+y[i][j];
+		}
+		}
+		return x;
+	}
+
+	public static void main (String [] args)
+	{
+		System.out.println("For the first matrix");
+		int ar1 [] []=readMat();
+		System.out.println ("Entered first Matrix :");
+		display (ar1);
+		System.out.println("For the second matrix");
+		int ar2 [] []=readMat();
+		System.out.println ("Entered second Matrix :");
+		display (ar2);
+		int newArr[][]=addMatrix(ar1,ar2);
+		System.out.println("After Addition :");
+		display(newArr);
+	}
+
+}

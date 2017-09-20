@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="childTheame" parent="superTheame">
+
+    </style>
+    <!-- Base application theme. -->
+    <style name="superTheame" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>
